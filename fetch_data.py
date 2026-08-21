@@ -44,7 +44,13 @@ def log(msg):
 
 
 def riot_get(url):
-    req = urllib.request.Request(url, headers={"X-Riot-Token": API_KEY})
+    req = urllib.request.Request(
+        url,
+        headers={
+            "X-Riot-Token": API_KEY,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        }
+    )
     with urllib.request.urlopen(req, timeout=15) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
