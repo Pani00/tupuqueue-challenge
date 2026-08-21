@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-21T17:01:18.504738+00:00",
+  "generatedAt": "2026-08-21T17:53:36.193530+00:00",
   "ddragonVersion": "16.16.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-08-21T17:01:18.504738+00:00",
+      "updatedAt": "2026-08-21T17:53:36.193530+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -29,7 +29,7 @@
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-08-21T17:01:18.504738+00:00",
+      "updatedAt": "2026-08-21T17:53:36.193530+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -44,15 +44,15 @@
       "summonerLevel": 33,
       "tier": "GOLD",
       "rank": "IV",
-      "leaguePoints": 45,
-      "wins": 10,
-      "losses": 5
+      "leaguePoints": 65,
+      "wins": 11,
+      "losses": 6
     },
     {
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-08-21T17:01:18.504738+00:00",
+      "updatedAt": "2026-08-21T17:53:36.193530+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -64,18 +64,18 @@
       },
       "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
       "profileIconId": 4108,
-      "summonerLevel": 32,
+      "summonerLevel": 33,
       "tier": "GOLD",
       "rank": "II",
-      "leaguePoints": 55,
-      "wins": 8,
-      "losses": 3
+      "leaguePoints": 75,
+      "wins": 9,
+      "losses": 4
     },
     {
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-08-21T17:01:18.504738+00:00",
+      "updatedAt": "2026-08-21T17:53:36.193530+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
