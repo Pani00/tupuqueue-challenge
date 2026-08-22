@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-22T04:57:19.940525+00:00",
+  "generatedAt": "2026-08-22T05:23:53.374305+00:00",
   "ddragonVersion": "16.16.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-08-22T04:57:19.940525+00:00",
+      "updatedAt": "2026-08-22T05:23:53.374305+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -21,15 +21,15 @@
       "summonerLevel": 33,
       "tier": "GOLD",
       "rank": "IV",
-      "leaguePoints": 25,
-      "wins": 9,
+      "leaguePoints": 55,
+      "wins": 10,
       "losses": 11
     },
     {
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-08-22T04:57:19.940525+00:00",
+      "updatedAt": "2026-08-22T05:23:53.374305+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -52,7 +52,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-08-22T04:57:19.940525+00:00",
+      "updatedAt": "2026-08-22T05:23:53.374305+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -75,7 +75,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-08-22T04:57:19.940525+00:00",
+      "updatedAt": "2026-08-22T05:23:53.374305+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
