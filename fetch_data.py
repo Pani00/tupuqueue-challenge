@@ -106,6 +106,23 @@ def fetch_player(game_name, tag_line, platform):
         })
     return result
 
+def fetch_new_pentakills(puuid, continent, last_checked_match_id):
+    match_ids = riot_get(
+        f"https://{continent}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
+        f"?queue=420&start=0&count=20"
+    )
+    if not match_ids:
+        return 0, last_checked_match_id
+    if last_checked_match_id is None:
+        return 0, match_ids[0]  # primera corrida: fija el punto de partida, no cuenta historial viejo
+    new_matches = match_ids[:match_ids.index(last_checked_match_id)] if last_checked_match_id in match_ids else match_ids
+    pentas = 0
+    for match_id in reversed(new_matches):
+        time.sleep(REQUEST_DELAY)
+        match = riot_get(f"https://{continent}.api.riotgames.com/lol/match/v5/matches/{match_id}")
+        idx = match["metadata"]["participants"].index(puuid)
+        pentas += match["info"]["participants"][idx].get("pentaKills", 0)
+    return pentas, match_ids[0]
 
 def main():
     if not API_KEY:
