@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-24T22:51:40.476719+00:00",
+  "generatedAt": "2026-08-24T23:17:51.654634+00:00",
   "ddragonVersion": "16.16.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -42,7 +42,7 @@
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -53,27 +53,27 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1619364954",
+      "lastMatchId": "LA2_1619377441",
       "lastGame": {
-        "win": true,
+        "win": false,
         "championId": 950,
         "championName": "Naafiri",
-        "kills": 12,
-        "deaths": 2,
-        "assists": 13,
-        "gameEndTimestamp": 1787610819057,
+        "kills": 5,
+        "deaths": 6,
+        "assists": 5,
+        "gameEndTimestamp": 1787612820470,
         "encountered": [
           {
             "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
             "championName": "Seraphine",
-            "win": true,
+            "win": false,
             "sameTeam": true
           }
         ]
       },
       "inGame": {
         "championId": 950,
-        "gameLength": 565,
+        "gameLength": 132,
         "gameQueueConfigId": 420
       },
       "puuid": "3qMr7eGrDE2xBSR7BYi6HJd_tDtxyEE8R_A9BU4Ok9-6nej3IhMLhq-0jqSRRXKB16xMH5Ih6Ak5Ww",
@@ -81,15 +81,15 @@
       "summonerLevel": 37,
       "tier": "PLATINUM",
       "rank": "IV",
-      "leaguePoints": 5,
+      "leaguePoints": 0,
       "wins": 27,
-      "losses": 20
+      "losses": 21
     },
     {
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -100,27 +100,27 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1619364954",
+      "lastMatchId": "LA2_1619377441",
       "lastGame": {
-        "win": true,
+        "win": false,
         "championId": 147,
         "championName": "Seraphine",
-        "kills": 1,
+        "kills": 2,
         "deaths": 5,
-        "assists": 24,
-        "gameEndTimestamp": 1787610819057,
+        "assists": 9,
+        "gameEndTimestamp": 1787612820470,
         "encountered": [
           {
             "puuid": "3qMr7eGrDE2xBSR7BYi6HJd_tDtxyEE8R_A9BU4Ok9-6nej3IhMLhq-0jqSRRXKB16xMH5Ih6Ak5Ww",
             "championName": "Naafiri",
-            "win": true,
+            "win": false,
             "sameTeam": true
           }
         ]
       },
       "inGame": {
         "championId": 147,
-        "gameLength": 572,
+        "gameLength": 139,
         "gameQueueConfigId": 420
       },
       "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
@@ -128,15 +128,15 @@
       "summonerLevel": 36,
       "tier": "PLATINUM",
       "rank": "I",
-      "leaguePoints": 25,
+      "leaguePoints": 15,
       "wins": 26,
-      "losses": 16
+      "losses": 17
     },
     {
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -172,7 +172,7 @@
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -215,7 +215,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -251,7 +251,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-08-24T22:51:40.476719+00:00",
+      "updatedAt": "2026-08-24T23:17:51.654634+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -262,30 +262,26 @@
         "recordedAt": "2026-08-23T00:08:28.102775+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1619364664",
+      "lastMatchId": "LA2_1619376193",
       "lastGame": {
         "win": false,
-        "championId": 36,
-        "championName": "DrMundo",
-        "kills": 8,
-        "deaths": 4,
-        "assists": 8,
-        "gameEndTimestamp": 1787610488430,
+        "championId": 75,
+        "championName": "Nasus",
+        "kills": 2,
+        "deaths": 9,
+        "assists": 0,
+        "gameEndTimestamp": 1787612404748,
         "encountered": []
       },
-      "inGame": {
-        "championId": 75,
-        "gameLength": 991,
-        "gameQueueConfigId": 420
-      },
+      "inGame": null,
       "puuid": "TlvB_yG7cXcMv3yBjwAmf_YzwXKhwkf8JyGK2ZN8wKlh1OeZNh4RDd9CUap-T5DCYA4AzuGr-Kg6aQ",
       "profileIconId": 7,
       "summonerLevel": 33,
       "tier": "GOLD",
       "rank": "III",
-      "leaguePoints": 91,
+      "leaguePoints": 81,
       "wins": 17,
-      "losses": 11
+      "losses": 12
     }
   ]
 }
