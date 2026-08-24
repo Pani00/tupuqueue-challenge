@@ -2,13 +2,6 @@
 """
 Actualiza data.json con el rango actual de SoloQ de cada jugador
 listado en players.json, usando la API oficial de Riot Games.
-
-Se ejecuta automáticamente cada 30 minutos vía GitHub Actions
-(.github/workflows/update.yml), pero también se puede correr a mano:
-
-    RIOT_API_KEY=tu_api_key python3 fetch_data.py
-
-Requiere únicamente la librería estándar de Python (sin pip install).
 """
 
 import json
@@ -22,7 +15,7 @@ from datetime import datetime, timezone
 
 PLAYERS_FILE = "players.json"
 DATA_FILE = "data.json"
-REQUEST_DELAY = 1.2  # segundos entre llamadas a la API, para no pegarle al rate limit
+REQUEST_DELAY = 1.2
 
 PLATFORM_TO_CONTINENT = {
     "na1": "americas", "br1": "americas", "la1": "americas", "la2": "americas",
@@ -106,6 +99,7 @@ def fetch_player(game_name, tag_line, platform):
         })
     return result
 
+
 def fetch_new_pentakills(puuid, continent, last_checked_match_id):
     match_ids = riot_get(
         f"https://{continent}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
@@ -114,7 +108,7 @@ def fetch_new_pentakills(puuid, continent, last_checked_match_id):
     if not match_ids:
         return 0, last_checked_match_id
     if last_checked_match_id is None:
-        return 0, match_ids[0]  # primera corrida: fija el punto de partida, no cuenta historial viejo
+        return 0, match_ids[0]
     new_matches = match_ids[:match_ids.index(last_checked_match_id)] if last_checked_match_id in match_ids else match_ids
     pentas = 0
     for match_id in reversed(new_matches):
@@ -123,6 +117,7 @@ def fetch_new_pentakills(puuid, continent, last_checked_match_id):
         idx = match["metadata"]["participants"].index(puuid)
         pentas += match["info"]["participants"][idx].get("pentaKills", 0)
     return pentas, match_ids[0]
+
 
 def main():
     if not API_KEY:
@@ -147,7 +142,7 @@ def main():
     now_iso = datetime.now(timezone.utc).isoformat()
     ddragon_version = get_latest_ddragon_version(previous.get("ddragonVersion"))
 
-        players_out = []
+    players_out = []
     for entry in roster:
         key = f"{entry['gameName']}#{entry['tagLine']}".lower()
         prev_player = previous_by_key.get(key, {})
@@ -172,7 +167,6 @@ def main():
                     "recordedAt": now_iso,
                 }
 
-            # Contador de pentakills
             continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
             last_match_id = prev_player.get("lastMatchId")
             new_pentas, newest_match_id = fetch_new_pentakills(
@@ -212,7 +206,6 @@ def main():
 
 
 def _stale_entry(entry, opgg_url, prev_player, error):
-    """Si falla una consulta, mantiene el último dato bueno en vez de borrar al jugador."""
     if prev_player:
         stale = dict(prev_player)
         stale["stale"] = True
