@@ -206,10 +206,6 @@ function renderBoard(players, ddragonVersion) {
         ${p.inGame ? `
         <div class="ingame-tag">
           🔴 EN PARTIDA
-          <img class="champ-icon"
-               src="${champIconUrl(p.inGame.championId)}"
-               alt="champ"
-               onerror="this.style.display='none'">
         </div>` : ""}
 
         ${p.lastGame ? `
