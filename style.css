@@ -482,4 +482,52 @@ footer p {
   .card { animation: none; transition: none; }
   .card:hover { transform: none; }
   .penta-flame, .hot-streak .flame { animation: none; }
+
+   .last-game {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.last-game.win {
+  background: rgba(63, 169, 160, 0.12);
+  color: #3fa9a0;
+  border: 1px solid rgba(63, 169, 160, 0.3);
+}
+.last-game.loss {
+  background: rgba(194, 78, 78, 0.12);
+  color: #c24e4e;
+  border: 1px solid rgba(194, 78, 78, 0.3);
+}
+.last-game .champ-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+.last-game .kda {
+  margin-left: auto;
+  opacity: 0.85;
+}
+
+.ingame-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff5c5c;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+.ingame-tag .champ-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
 }
