@@ -3,7 +3,7 @@ name: Actualizar ranking SoloBoom LAS
 on:
   schedule:
     - cron: "*/30 * * * *"
-  workflow_dispatch: {} # permite tocar "Run workflow" a mano desde la pestaña Actions
+  workflow_dispatch: {}
 
 permissions:
   contents: write
