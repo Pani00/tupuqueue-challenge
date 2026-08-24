@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-24T01:16:23.304395+00:00",
+  "generatedAt": "2026-08-24T01:23:44.426631+00:00",
   "ddragonVersion": "16.16.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -25,7 +25,8 @@
         "kills": 6,
         "deaths": 6,
         "assists": 7,
-        "gameEndTimestamp": 1787520306930
+        "gameEndTimestamp": 1787520306930,
+        "encountered": []
       },
       "inGame": null,
       "puuid": "3g4VM5ZY-uhAYMkPCqjsvWPrid_NGNrb8Fg7WRJW2YXPZeDxzDKHNQ44Gfa5dW8yluD8w53CjgNcPA",
@@ -41,7 +42,7 @@
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -60,9 +61,21 @@
         "kills": 11,
         "deaths": 5,
         "assists": 5,
-        "gameEndTimestamp": 1787526626248
+        "gameEndTimestamp": 1787526626248,
+        "encountered": [
+          {
+            "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
+            "championName": "Seraphine",
+            "win": true,
+            "sameTeam": true
+          }
+        ]
       },
-      "inGame": null,
+      "inGame": {
+        "championId": 950,
+        "gameLength": 91,
+        "gameQueueConfigId": 420
+      },
       "puuid": "3qMr7eGrDE2xBSR7BYi6HJd_tDtxyEE8R_A9BU4Ok9-6nej3IhMLhq-0jqSRRXKB16xMH5Ih6Ak5Ww",
       "profileIconId": 6588,
       "summonerLevel": 35,
@@ -76,7 +89,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -95,9 +108,21 @@
         "kills": 5,
         "deaths": 5,
         "assists": 18,
-        "gameEndTimestamp": 1787526626248
+        "gameEndTimestamp": 1787526626248,
+        "encountered": [
+          {
+            "puuid": "3qMr7eGrDE2xBSR7BYi6HJd_tDtxyEE8R_A9BU4Ok9-6nej3IhMLhq-0jqSRRXKB16xMH5Ih6Ak5Ww",
+            "championName": "Naafiri",
+            "win": true,
+            "sameTeam": true
+          }
+        ]
       },
-      "inGame": null,
+      "inGame": {
+        "championId": 147,
+        "gameLength": 97,
+        "gameQueueConfigId": 420
+      },
       "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
       "profileIconId": 4108,
       "summonerLevel": 35,
@@ -111,7 +136,7 @@
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -130,11 +155,19 @@
         "kills": 2,
         "deaths": 2,
         "assists": 11,
-        "gameEndTimestamp": 1787532695023
+        "gameEndTimestamp": 1787532695023,
+        "encountered": [
+          {
+            "puuid": "ZfgQXGVEYUdvHn3IMYiSmGMs8uQGo1_8GK664uxNPxVo3vaLUDIfUAWSM-U0Y9N7NhMf5YTOx7Nb3Q",
+            "championName": "Vex",
+            "win": true,
+            "sameTeam": true
+          }
+        ]
       },
       "inGame": {
         "championId": 28,
-        "gameLength": 824,
+        "gameLength": 1265,
         "gameQueueConfigId": 420
       },
       "puuid": "iUXh3Hg5_Ih0o65WNRhorUke9WMg1pe85cxSTAs0Xd4qRG1o8Tc4JYoOt9wgzUCv4ab-1GXDvXU7kA",
@@ -150,7 +183,7 @@
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -169,11 +202,19 @@
         "kills": 7,
         "deaths": 2,
         "assists": 12,
-        "gameEndTimestamp": 1787532695023
+        "gameEndTimestamp": 1787532695023,
+        "encountered": [
+          {
+            "puuid": "iUXh3Hg5_Ih0o65WNRhorUke9WMg1pe85cxSTAs0Xd4qRG1o8Tc4JYoOt9wgzUCv4ab-1GXDvXU7kA",
+            "championName": "Lillia",
+            "win": true,
+            "sameTeam": true
+          }
+        ]
       },
       "inGame": {
         "championId": 711,
-        "gameLength": 831,
+        "gameLength": 1271,
         "gameQueueConfigId": 420
       },
       "puuid": "ZfgQXGVEYUdvHn3IMYiSmGMs8uQGo1_8GK664uxNPxVo3vaLUDIfUAWSM-U0Y9N7NhMf5YTOx7Nb3Q",
@@ -189,7 +230,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -208,7 +249,8 @@
         "kills": 6,
         "deaths": 8,
         "assists": 10,
-        "gameEndTimestamp": 1787447485201
+        "gameEndTimestamp": 1787447485201,
+        "encountered": []
       },
       "inGame": null,
       "puuid": "QfNbuAqAGA_II4ywlR-gQW1EX31sw0Enm1MoqBl8h4eoZGLX8WkoF4_vV7Y495eDxnm4S9Z2LM-0Iw",
@@ -224,7 +266,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-08-24T01:16:23.304395+00:00",
+      "updatedAt": "2026-08-24T01:23:44.426631+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -243,7 +285,8 @@
         "kills": 5,
         "deaths": 8,
         "assists": 6,
-        "gameEndTimestamp": 1787498728897
+        "gameEndTimestamp": 1787498728897,
+        "encountered": []
       },
       "inGame": null,
       "puuid": "TlvB_yG7cXcMv3yBjwAmf_YzwXKhwkf8JyGK2ZN8wKlh1OeZNh4RDd9CUap-T5DCYA4AzuGr-Kg6aQ",
