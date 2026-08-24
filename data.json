@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T00:08:55.660599+00:00",
+  "generatedAt": "2026-08-24T00:37:10.909211+00:00",
   "ddragonVersion": "16.16.1",
   "players": [
     {
@@ -7,7 +7,7 @@
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
       "updatedAt": "2026-08-24T00:08:55.660599+00:00",
-      "stale": false,
+      "stale": true,
       "baseline": {
         "tier": "SILVER",
         "rank": "I",
@@ -23,13 +23,14 @@
       "rank": "III",
       "leaguePoints": 5,
       "wins": 13,
-      "losses": 13
+      "losses": 13,
+      "error": "The read operation timed out"
     },
     {
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -39,6 +40,8 @@
         "losses": 5,
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1619155113",
       "puuid": "3qMr7eGrDE2xBSR7BYi6HJd_tDtxyEE8R_A9BU4Ok9-6nej3IhMLhq-0jqSRRXKB16xMH5Ih6Ak5Ww",
       "profileIconId": 6588,
       "summonerLevel": 35,
@@ -52,7 +55,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -62,6 +65,8 @@
         "losses": 2,
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1619155113",
       "puuid": "-wLrHF2dF2HGUhdwrA6sMIY20gRRPh9JwBcR6NuUuUC9La3xywpY6Z6J-StBsHXBjVonZYbZ72XqhQ",
       "profileIconId": 4108,
       "summonerLevel": 35,
@@ -75,7 +80,7 @@
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -85,20 +90,22 @@
         "losses": 0,
         "recordedAt": "2026-08-22T23:59:13.812272+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1619176098",
       "puuid": "iUXh3Hg5_Ih0o65WNRhorUke9WMg1pe85cxSTAs0Xd4qRG1o8Tc4JYoOt9wgzUCv4ab-1GXDvXU7kA",
       "profileIconId": 4794,
       "summonerLevel": 31,
-      "tier": null,
-      "rank": null,
-      "leaguePoints": 0,
-      "wins": 0,
-      "losses": 0
+      "tier": "GOLD",
+      "rank": "IV",
+      "leaguePoints": 10,
+      "wins": 2,
+      "losses": 3
     },
     {
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -108,20 +115,22 @@
         "losses": 0,
         "recordedAt": "2026-08-22T23:59:13.812272+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1619176098",
       "puuid": "ZfgQXGVEYUdvHn3IMYiSmGMs8uQGo1_8GK664uxNPxVo3vaLUDIfUAWSM-U0Y9N7NhMf5YTOx7Nb3Q",
       "profileIconId": 1,
       "summonerLevel": 31,
-      "tier": null,
-      "rank": null,
-      "leaguePoints": 0,
-      "wins": 0,
-      "losses": 0
+      "tier": "GOLD",
+      "rank": "IV",
+      "leaguePoints": 10,
+      "wins": 2,
+      "losses": 3
     },
     {
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -131,12 +140,14 @@
         "losses": 8,
         "recordedAt": "2026-08-22T23:59:13.812272+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1618920879",
       "puuid": "QfNbuAqAGA_II4ywlR-gQW1EX31sw0Enm1MoqBl8h4eoZGLX8WkoF4_vV7Y495eDxnm4S9Z2LM-0Iw",
       "profileIconId": 7176,
       "summonerLevel": 32,
       "tier": "SILVER",
       "rank": "III",
-      "leaguePoints": 85,
+      "leaguePoints": 80,
       "wins": 10,
       "losses": 9
     },
@@ -144,7 +155,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-08-24T00:08:55.660599+00:00",
+      "updatedAt": "2026-08-24T00:37:10.909211+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -154,6 +165,8 @@
         "losses": 4,
         "recordedAt": "2026-08-23T00:08:28.102775+00:00"
       },
+      "pentakills": 0,
+      "lastMatchId": "LA2_1619058220",
       "puuid": "TlvB_yG7cXcMv3yBjwAmf_YzwXKhwkf8JyGK2ZN8wKlh1OeZNh4RDd9CUap-T5DCYA4AzuGr-Kg6aQ",
       "profileIconId": 7,
       "summonerLevel": 32,
