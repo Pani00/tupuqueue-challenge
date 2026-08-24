@@ -119,7 +119,7 @@ def fetch_new_pentakills(puuid, continent, last_checked_match_id):
     return pentas, match_ids[0]
 
 
-def fetch_last_game(puuid, continent):
+def fetch_last_game(puuid, continent, all_puuids):
     try:
         match_ids = riot_get(
             f"https://{continent}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
@@ -130,6 +130,21 @@ def fetch_last_game(puuid, continent):
         match = riot_get(f"https://{continent}.api.riotgames.com/lol/match/v5/matches/{match_ids[0]}")
         idx = match["metadata"]["participants"].index(puuid)
         p = match["info"]["participants"][idx]
+
+        encountered = []
+        for other_puuid in all_puuids:
+            if other_puuid == puuid:
+                continue
+            if other_puuid in match["metadata"]["participants"]:
+                other_idx = match["metadata"]["participants"].index(other_puuid)
+                other = match["info"]["participants"][other_idx]
+                encountered.append({
+                    "puuid": other_puuid,
+                    "championName": other.get("championName"),
+                    "win": other.get("win", False),
+                    "sameTeam": other.get("teamId") == p.get("teamId"),
+                })
+
         return {
             "win": p.get("win", False),
             "championId": p.get("championId"),
@@ -138,6 +153,7 @@ def fetch_last_game(puuid, continent):
             "deaths": p.get("deaths", 0),
             "assists": p.get("assists", 0),
             "gameEndTimestamp": match["info"].get("gameEndTimestamp"),
+            "encountered": encountered,
         }
     except Exception:
         return None
@@ -184,6 +200,8 @@ def main():
         for p in previous.get("players", [])
     }
 
+    known_puuids = [p.get("puuid") for p in previous.get("players", []) if p.get("puuid")]
+
     now_iso = datetime.now(timezone.utc).isoformat()
     ddragon_version = get_latest_ddragon_version(previous.get("ddragonVersion"))
 
@@ -219,7 +237,7 @@ def main():
             )
             total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
 
-            last_game = fetch_last_game(fetched["puuid"], continent)
+            last_game = fetch_last_game(fetched["puuid"], continent, known_puuids + [fetched["puuid"]])
             time.sleep(REQUEST_DELAY)
             current_game = fetch_current_game(fetched["puuid"], platform)
 
