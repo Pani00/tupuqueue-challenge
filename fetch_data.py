@@ -212,12 +212,17 @@ def main():
                     "recordedAt": now_iso,
                 }
 
-            continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
+                       continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
             last_match_id = prev_player.get("lastMatchId")
             new_pentas, newest_match_id = fetch_new_pentakills(
                 fetched["puuid"], continent, last_match_id
             )
             total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
+
+            # Nueva parte: última partida + si está en juego
+            last_game = fetch_last_game(fetched["puuid"], continent)
+            time.sleep(REQUEST_DELAY)
+            current_game = fetch_current_game(fetched["puuid"], platform)
 
             players_out.append({
                 "gameName": entry["gameName"],
@@ -228,6 +233,8 @@ def main():
                 "baseline": baseline,
                 "pentakills": total_pentas,
                 "lastMatchId": newest_match_id,
+                "lastGame": last_game,
+                "inGame": current_game,
                 **fetched,
             })
         except urllib.error.HTTPError as e:
