@@ -81,7 +81,13 @@ function champIconUrl(championId) {
 function formatLastUpdated(iso) {
   if (!iso) return "esperando primera actualización";
   const d = new Date(iso);
-  return d.toLocaleString("es-AR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false });
+  return d.toLocaleString("es-AR", {
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
 }
 
 async function loadData() {
@@ -183,80 +189,4 @@ function renderBoard(players, ddragonVersion) {
           ${emblem ? `<img class="tier-emblem" src="${emblem}" alt="${esc(t.label)}" loading="lazy">` : ""}
           <div class="tier-text">
             <span class="tier-name">${esc(t ? t.label : p.tier)}${APEX.has(p.tier) ? "" : " " + esc(p.rank || "")}</span>
-            <span class="lp-value">${p.leaguePoints ?? 0} LP</span>
-          </div>
-          ${progress ? `<span class="progress-pill ${progress.cls}">${esc(progress.text)}</span>` : ""}
-        </div>
-        <div class="stats-row">
-          <span><b>${p.wins ?? 0}</b>V &middot; <b>${p.losses ?? 0}</b>D${wr !== null ? ` &middot; ${wr}% WR` : ""}</span>
-          <span>
-            ${gamesSinceBaseline !== null ? `${gamesSinceBaseline} jugadas` : ""}
-            ${p.pentakills ? ` · <b style="color:var(--gold)">${p.pentakills} Penta${p.pentakills > 1 ? "s" : ""}</b>` : ""}
-          </span>
-        </div>
-        ${
-          p.baseline && p.baseline.tier
-            ? `<div class="baseline-note">Arrancó en ${esc(tierInfo(p.baseline.tier)?.label || p.baseline.tier)}${APEX.has(p.baseline.tier) ? "" : " " + esc(p.baseline.rank || "")} · ${p.baseline.leaguePoints ?? 0} LP</div>`
-            : ""
-        }
-        `
-            : `<div class="rank-row"><span class="tier-name" style="color:var(--muted)">Sin clasificar todavía</span></div>`
-        }
-
-        ${p.inGame ? `
-        <div class="ingame-tag">
-          🔴 EN PARTIDA
-        </div>` : ""}
-
-        ${p.lastGame ? `
-        <div class="last-game ${p.lastGame.win ? "win" : "loss"}">
-          <img class="champ-icon"
-               src="${champIconUrl(p.lastGame.championId)}"
-               alt="${esc(p.lastGame.championName || '')}"
-               onerror="this.style.display='none'">
-          <span class="result">${p.lastGame.win ? "VICTORIA" : "DERROTA"}</span>
-          <span class="kda">${p.lastGame.kills}/${p.lastGame.deaths}/${p.lastGame.assists}</span>
-        </div>` : ""}
-
-        ${p.lastGame && p.lastGame.encountered && p.lastGame.encountered.length ? `
-        <div class="encounter">
-          ${p.lastGame.encountered.map(e => {
-            const other = players.find(pl => pl.puuid === e.puuid);
-            const name = other ? `${other.gameName}#${other.tagLine}` : "otro jugador";
-            const relation = e.sameTeam ? "aliado de" : "rival de";
-            return `⚔️ Se cruzó como <b>${relation}</b> <b>${esc(name)}</b>`;
-          }).join("<br>")}
-        </div>` : ""}
-
-        ${p.stale ? `<span class="stale-tag">⚠ No se pudo actualizar en la última corrida — mostrando el último dato bueno</span>` : ""}
-      </article>`;
-    })
-    .join("");
-}
-
-function scheduleCountdown(generatedAt) {
-  clearInterval(countdownTimer);
-  const el = document.getElementById("countdown");
-  if (!generatedAt) {
-    el.textContent = "--:--";
-    return;
-  }
-  const next = new Date(generatedAt).getTime() + UPDATE_MINUTES * 60 * 1000;
-
-  function tick() {
-    const diff = next - Date.now();
-    if (diff <= 0) {
-      el.textContent = "00:00";
-      return;
-    }
-    const m = Math.floor(diff / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    el.textContent = `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-  }
-
-  tick();
-  countdownTimer = setInterval(tick, 1000);
-}
-
-loadData();
-setInterval(loadData, 45000);
+            <span class="
