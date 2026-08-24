@@ -118,8 +118,8 @@ def fetch_new_pentakills(puuid, continent, last_checked_match_id):
         pentas += match["info"]["participants"][idx].get("pentaKills", 0)
     return pentas, match_ids[0]
 
+
 def fetch_last_game(puuid, continent):
-    """Devuelve info de la última partida ranked."""
     try:
         match_ids = riot_get(
             f"https://{continent}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
@@ -144,7 +144,6 @@ def fetch_last_game(puuid, continent):
 
 
 def fetch_current_game(puuid, platform):
-    """Devuelve info si el jugador está en partida ahora."""
     try:
         game = riot_get(
             f"https://{platform}.api.riotgames.com/lol/spectator/v5/active-games/by-summoner/{puuid}"
@@ -159,10 +158,11 @@ def fetch_current_game(puuid, platform):
         }
     except urllib.error.HTTPError as e:
         if e.code == 404:
-            return None  # no está en partida
+            return None
         return None
     except Exception:
         return None
+
 
 def main():
     if not API_KEY:
@@ -212,14 +212,13 @@ def main():
                     "recordedAt": now_iso,
                 }
 
-                       continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
+            continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
             last_match_id = prev_player.get("lastMatchId")
             new_pentas, newest_match_id = fetch_new_pentakills(
                 fetched["puuid"], continent, last_match_id
             )
             total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
 
-            # Nueva parte: última partida + si está en juego
             last_game = fetch_last_game(fetched["puuid"], continent)
             time.sleep(REQUEST_DELAY)
             current_game = fetch_current_game(fetched["puuid"], platform)
