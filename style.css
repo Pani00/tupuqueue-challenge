@@ -40,12 +40,6 @@
   font-size: 0.75rem;
   font-weight: 700;
   color: #ff5c5c;
-  animation: pulse 1.5s ease-in-out infinite;
-}
-.ingame-tag .champ-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
 }
 
 /* Cruce entre jugadores del challenge */
