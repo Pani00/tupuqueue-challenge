@@ -147,7 +147,7 @@ def main():
     now_iso = datetime.now(timezone.utc).isoformat()
     ddragon_version = get_latest_ddragon_version(previous.get("ddragonVersion"))
 
-    players_out = []
+        players_out = []
     for entry in roster:
         key = f"{entry['gameName']}#{entry['tagLine']}".lower()
         prev_player = previous_by_key.get(key, {})
@@ -157,7 +157,7 @@ def main():
             urllib.parse.quote(entry["tagLine"]),
         )
 
-                try:
+        try:
             fetched = fetch_player(entry["gameName"], entry["tagLine"], platform)
             log(f"OK  {key}: {fetched.get('tier')} {fetched.get('rank')} {fetched.get('leaguePoints')} LP")
 
@@ -175,7 +175,9 @@ def main():
             # Contador de pentakills
             continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
             last_match_id = prev_player.get("lastMatchId")
-            new_pentas, newest_match_id = fetch_new_pentakills(fetched["puuid"], continent, last_match_id)
+            new_pentas, newest_match_id = fetch_new_pentakills(
+                fetched["puuid"], continent, last_match_id
+            )
             total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
 
             players_out.append({
@@ -189,13 +191,6 @@ def main():
                 "lastMatchId": newest_match_id,
                 **fetched,
             })
-        except urllib.error.HTTPError as e:
-            log(f"FALLÓ {key}: HTTP {e.code} {e.reason}")
-            players_out.append(_stale_entry(entry, opgg_url, prev_player, f"HTTP {e.code}"))
-        except Exception as e:
-            log(f"FALLÓ {key}: {e}")
-            players_out.append(_stale_entry(entry, opgg_url, prev_player, str(e)))
-
         except urllib.error.HTTPError as e:
             log(f"FALLÓ {key}: HTTP {e.code} {e.reason}")
             players_out.append(_stale_entry(entry, opgg_url, prev_player, f"HTTP {e.code}"))
