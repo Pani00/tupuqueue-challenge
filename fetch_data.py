@@ -172,23 +172,23 @@ def main():
                     "recordedAt": now_iso,
                 }
 
-# Contador de pentakills
-continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
-last_match_id = prev_player.get("lastMatchId")
-new_pentas, newest_match_id = fetch_new_pentakills(fetched["puuid"], continent, last_match_id)
-total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
-
-players_out.append({
-    "gameName": entry["gameName"],
-    "tagLine": entry["tagLine"],
-    "opggUrl": opgg_url,
-    "updatedAt": now_iso,
-    "stale": False,
-    "baseline": baseline,
-    "pentakills": total_pentas,
-    "lastMatchId": newest_match_id,
-    **fetched,
-})
+    # Contador de pentakills
+    continent = PLATFORM_TO_CONTINENT.get(platform, "americas")
+    last_match_id = prev_player.get("lastMatchId")
+    new_pentas, newest_match_id = fetch_new_pentakills(fetched["puuid"], continent, last_match_id)
+    total_pentas = (prev_player.get("pentakills") or 0) + new_pentas
+    
+    players_out.append({
+        "gameName": entry["gameName"],
+        "tagLine": entry["tagLine"],
+        "opggUrl": opgg_url,
+        "updatedAt": now_iso,
+        "stale": False,
+        "baseline": baseline,
+        "pentakills": total_pentas,
+        "lastMatchId": newest_match_id,
+        **fetched,
+    })
 
         except urllib.error.HTTPError as e:
             log(f"FALLÓ {key}: HTTP {e.code} {e.reason}")
