@@ -1,5 +1,4 @@
-// SOLOBOOM LAS — lee data.json (generado por fetch_data.py vía GitHub Actions)
-// y dibuja la escalera + las tarjetas. No necesita build ni dependencias.
+// SOLOBOOM LAS — lee data.json y dibuja la escalera + las tarjetas
 
 const TIERS = [
   { key: "IRON", label: "Hierro", varName: "--tier-iron", start: 0, end: 10 },
@@ -23,11 +22,6 @@ function esc(str) {
   return String(str).replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   }[c]));
-}
-
-function getChampName(id) {
-  // fallback simple, el onerror del img se encarga si falla
-  return id;
 }
 
 function tierInfo(tierKey) {
@@ -77,6 +71,11 @@ function profileIconUrl(player, ddragonVersion) {
 function tierEmblemUrl(tier) {
   if (!tier) return null;
   return `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/emblem-${tier.toLowerCase()}.png`;
+}
+
+function champIconUrl(championId) {
+  if (!championId) return null;
+  return `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${championId}.png`;
 }
 
 function formatLastUpdated(iso) {
@@ -207,14 +206,30 @@ function renderBoard(players, ddragonVersion) {
         ${p.inGame ? `
         <div class="ingame-tag">
           🔴 EN PARTIDA
-          ${p.inGame.championId ? `<img class="champ-icon" src="https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${getChampName(p.inGame.championId)}.png" alt="">` : ""}
+          <img class="champ-icon"
+               src="${champIconUrl(p.inGame.championId)}"
+               alt="champ"
+               onerror="this.style.display='none'">
         </div>` : ""}
 
         ${p.lastGame ? `
         <div class="last-game ${p.lastGame.win ? "win" : "loss"}">
-          <img class="champ-icon" src="https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${esc(p.lastGame.championName)}.png" alt="${esc(p.lastGame.championName)}" onerror="this.style.display='none'">
+          <img class="champ-icon"
+               src="${champIconUrl(p.lastGame.championId)}"
+               alt="${esc(p.lastGame.championName || '')}"
+               onerror="this.style.display='none'">
           <span class="result">${p.lastGame.win ? "VICTORIA" : "DERROTA"}</span>
           <span class="kda">${p.lastGame.kills}/${p.lastGame.deaths}/${p.lastGame.assists}</span>
+        </div>` : ""}
+
+        ${p.lastGame && p.lastGame.encountered && p.lastGame.encountered.length ? `
+        <div class="encounter">
+          ${p.lastGame.encountered.map(e => {
+            const other = players.find(pl => pl.puuid === e.puuid);
+            const name = other ? `${other.gameName}#${other.tagLine}` : "otro jugador";
+            const relation = e.sameTeam ? "aliado de" : "rival de";
+            return `⚔️ Se cruzó como <b>${relation}</b> <b>${esc(name)}</b>`;
+          }).join("<br>")}
         </div>` : ""}
 
         ${p.stale ? `<span class="stale-tag">⚠ No se pudo actualizar en la última corrida — mostrando el último dato bueno</span>` : ""}
@@ -248,4 +263,4 @@ function scheduleCountdown(generatedAt) {
 }
 
 loadData();
-setInterval(loadData, 45000); // vuelve a leer data.json cada 45s por si ya se actualizó
+setInterval(loadData, 45000);
