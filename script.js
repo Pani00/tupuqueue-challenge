@@ -184,9 +184,12 @@ function renderBoard(players, ddragonVersion) {
           ${progress ? `<span class="progress-pill ${progress.cls}">${esc(progress.text)}</span>` : ""}
         </div>
         <div class="stats-row">
-          <span><b>${p.wins ?? 0}</b>V &middot; <b>${p.losses ?? 0}</b>D${wr !== null ? ` &middot; ${wr}% WR` : ""}</span>
-          ${gamesSinceBaseline !== null ? `<span>${gamesSinceBaseline} jugadas en el challenge</span>` : ""}
-        </div>
+  <span><b>${p.wins ?? 0}</b>V &middot; <b>${p.losses ?? 0}</b>D${wr !== null ? ` &middot; ${wr}% WR` : ""}</span>
+  <span>
+    ${gamesSinceBaseline !== null ? `${gamesSinceBaseline} jugadas` : ""}
+    ${p.pentakills ? ` · <b style="color:var(--gold)">${p.pentakills} Penta${p.pentakills > 1 ? "s" : ""}</b>` : ""}
+  </span>
+</div>
         ${
           p.baseline && p.baseline.tier
             ? `<div class="baseline-note">Arrancó en ${esc(tierInfo(p.baseline.tier)?.label || p.baseline.tier)}${APEX.has(p.baseline.tier) ? "" : " " + esc(p.baseline.rank || "")} · ${p.baseline.leaguePoints ?? 0} LP</div>`
