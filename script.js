@@ -15,7 +15,7 @@ const TIERS = [
 ];
 const APEX = new Set(["MASTER", "GRANDMASTER", "CHALLENGER"]);
 const RANK_ORDER = { IV: 0, III: 1, II: 2, I: 3 };
-const UPDATE_MINUTES = 30;
+const UPDATE_MINUTES = 5;
 
 let countdownTimer = null;
 
