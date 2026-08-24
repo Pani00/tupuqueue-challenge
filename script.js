@@ -25,6 +25,11 @@ function esc(str) {
   }[c]));
 }
 
+function getChampName(id) {
+  // fallback simple, el onerror del img se encarga si falla
+  return id;
+}
+
 function tierInfo(tierKey) {
   return TIERS.find((t) => t.key === tierKey) || null;
 }
@@ -198,6 +203,19 @@ function renderBoard(players, ddragonVersion) {
         `
             : `<div class="rank-row"><span class="tier-name" style="color:var(--muted)">Sin clasificar todavía</span></div>`
         }
+
+        ${p.inGame ? `
+        <div class="ingame-tag">
+          🔴 EN PARTIDA
+          ${p.inGame.championId ? `<img class="champ-icon" src="https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${getChampName(p.inGame.championId)}.png" alt="">` : ""}
+        </div>` : ""}
+
+        ${p.lastGame ? `
+        <div class="last-game ${p.lastGame.win ? "win" : "loss"}">
+          <img class="champ-icon" src="https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${esc(p.lastGame.championName)}.png" alt="${esc(p.lastGame.championName)}" onerror="this.style.display='none'">
+          <span class="result">${p.lastGame.win ? "VICTORIA" : "DERROTA"}</span>
+          <span class="kda">${p.lastGame.kills}/${p.lastGame.deaths}/${p.lastGame.assists}</span>
+        </div>` : ""}
 
         ${p.stale ? `<span class="stale-tag">⚠ No se pudo actualizar en la última corrida — mostrando el último dato bueno</span>` : ""}
       </article>`;
