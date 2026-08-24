@@ -118,6 +118,51 @@ def fetch_new_pentakills(puuid, continent, last_checked_match_id):
         pentas += match["info"]["participants"][idx].get("pentaKills", 0)
     return pentas, match_ids[0]
 
+def fetch_last_game(puuid, continent):
+    """Devuelve info de la última partida ranked."""
+    try:
+        match_ids = riot_get(
+            f"https://{continent}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
+            f"?queue=420&start=0&count=1"
+        )
+        if not match_ids:
+            return None
+        match = riot_get(f"https://{continent}.api.riotgames.com/lol/match/v5/matches/{match_ids[0]}")
+        idx = match["metadata"]["participants"].index(puuid)
+        p = match["info"]["participants"][idx]
+        return {
+            "win": p.get("win", False),
+            "championId": p.get("championId"),
+            "championName": p.get("championName"),
+            "kills": p.get("kills", 0),
+            "deaths": p.get("deaths", 0),
+            "assists": p.get("assists", 0),
+            "gameEndTimestamp": match["info"].get("gameEndTimestamp"),
+        }
+    except Exception:
+        return None
+
+
+def fetch_current_game(puuid, platform):
+    """Devuelve info si el jugador está en partida ahora."""
+    try:
+        game = riot_get(
+            f"https://{platform}.api.riotgames.com/lol/spectator/v5/active-games/by-summoner/{puuid}"
+        )
+        participant = next((p for p in game.get("participants", []) if p.get("puuid") == puuid), None)
+        if not participant:
+            return None
+        return {
+            "championId": participant.get("championId"),
+            "gameLength": game.get("gameLength", 0),
+            "gameQueueConfigId": game.get("gameQueueConfigId"),
+        }
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None  # no está en partida
+        return None
+    except Exception:
+        return None
 
 def main():
     if not API_KEY:
