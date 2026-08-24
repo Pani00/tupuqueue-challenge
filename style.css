@@ -155,6 +155,43 @@ h1 span { color: var(--gold); }
   font-weight: 500;
 }
 
+/* ---------- Contador de pentakills ---------- */
+
+.penta-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(232, 176, 75, 0.35);
+  background: rgba(232, 176, 75, 0.08);
+}
+
+.penta-flame {
+  font-size: 1.25rem;
+  display: inline-block;
+  animation: flicker 1.8s ease-in-out infinite;
+}
+
+.penta-count {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.penta-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
 /* ---------- Ladder ---------- */
 
 .ladder {
@@ -205,7 +242,14 @@ h1 span { color: var(--gold); }
   background-size: cover;
   background-position: center;
   background-color: var(--surface-2);
-  transition: left 900ms ease;
+  transition: left 900ms ease, transform 150ms ease, box-shadow 150ms ease;
+  cursor: default;
+}
+
+.ladder-marker:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--gold), 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 /* ---------- Board ---------- */
@@ -235,6 +279,26 @@ h1 span { color: var(--gold); }
   padding: 1.1rem 1.2rem 1.2rem;
   position: relative;
   border-top: 3px solid var(--tier-color, var(--line));
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  animation: cardIn 420ms ease backwards;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.card.is-leader {
+  box-shadow: 0 0 0 1px rgba(232, 176, 75, 0.4), 0 10px 34px rgba(232, 176, 75, 0.16);
+}
+
+.card.is-leader:hover {
+  box-shadow: 0 0 0 1px rgba(232, 176, 75, 0.55), 0 14px 34px rgba(232, 176, 75, 0.22);
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .card-top {
@@ -252,6 +316,12 @@ h1 span { color: var(--gold); }
 }
 
 .rank-position.is-first { color: var(--gold); }
+
+.crown {
+  display: inline-block;
+  filter: drop-shadow(0 0 6px rgba(232, 176, 75, 0.6));
+  margin-right: 0.05em;
+}
 
 .avatar {
   width: 44px;
@@ -334,6 +404,40 @@ h1 span { color: var(--gold); }
 
 .stats-row b { color: var(--text); font-weight: 600; }
 
+.hot-streak {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.hot-streak .flame {
+  display: inline-block;
+  animation: flicker 1.6s ease-in-out infinite;
+}
+
+.promo-row {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.55rem;
+}
+
+.promo-pip {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+}
+
+.promo-pip.win { background: var(--gold); border-color: var(--gold); }
+.promo-pip.loss { background: var(--rust); border-color: var(--rust); }
+.promo-pip.pending { background: transparent; }
+
+.penta-chip {
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+
+.penta-chip.has-pentas { color: var(--gold); font-weight: 600; }
+
 .baseline-note {
   margin-top: 0.5rem;
   font-size: 0.72rem;
@@ -375,4 +479,7 @@ footer p {
 @media (prefers-reduced-motion: reduce) {
   .live-pill .dot { animation: none; }
   .ladder-marker { transition: none; }
+  .card { animation: none; transition: none; }
+  .card:hover { transform: none; }
+  .penta-flame, .hot-streak .flame { animation: none; }
 }
