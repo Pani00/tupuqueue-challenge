@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-21T20:44:39.517454+00:00",
+  "generatedAt": "2026-09-21T23:46:15.463015+00:00",
   "ddragonVersion": "16.18.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -42,7 +42,7 @@
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -78,7 +78,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -114,7 +114,7 @@
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -150,7 +150,7 @@
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -186,7 +186,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -197,15 +197,15 @@
         "recordedAt": "2026-08-22T23:59:13.812272+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1618920879",
+      "lastMatchId": "LA2_1625678335",
       "lastGame": {
         "win": true,
-        "championId": 24,
-        "championName": "Jax",
-        "kills": 6,
-        "deaths": 8,
-        "assists": 10,
-        "gameEndTimestamp": 1787447485201,
+        "championId": 240,
+        "championName": "Kled",
+        "kills": 9,
+        "deaths": 1,
+        "assists": 2,
+        "gameEndTimestamp": 1790029925855,
         "encountered": []
       },
       "inGame": null,
@@ -213,16 +213,16 @@
       "profileIconId": 7176,
       "summonerLevel": 32,
       "tier": "SILVER",
-      "rank": "III",
-      "leaguePoints": 80,
-      "wins": 10,
+      "rank": "II",
+      "leaguePoints": 40,
+      "wins": 12,
       "losses": 9
     },
     {
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-09-21T20:44:39.517454+00:00",
+      "updatedAt": "2026-09-21T23:46:15.463015+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
