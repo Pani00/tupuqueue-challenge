@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-05T18:41:18.231001+00:00",
+  "generatedAt": "2026-10-06T00:32:27.753117+00:00",
   "ddragonVersion": "16.19.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -42,7 +42,7 @@
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -78,7 +78,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -89,15 +89,15 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1628607156",
+      "lastMatchId": "LA2_1628628194",
       "lastGame": {
-        "win": true,
-        "championId": 235,
-        "championName": "Senna",
-        "kills": 3,
-        "deaths": 7,
-        "assists": 14,
-        "gameEndTimestamp": 1791225195576,
+        "win": false,
+        "championId": 147,
+        "championName": "Seraphine",
+        "kills": 1,
+        "deaths": 10,
+        "assists": 4,
+        "gameEndTimestamp": 1791233933658,
         "encountered": []
       },
       "inGame": null,
@@ -106,15 +106,15 @@
       "summonerLevel": 41,
       "tier": "EMERALD",
       "rank": "I",
-      "leaguePoints": 51,
+      "leaguePoints": 36,
       "wins": 48,
-      "losses": 43
+      "losses": 44
     },
     {
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -150,7 +150,7 @@
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -186,7 +186,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -222,7 +222,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-10-05T18:41:18.231001+00:00",
+      "updatedAt": "2026-10-06T00:32:27.753117+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
