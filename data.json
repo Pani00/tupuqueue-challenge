@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-06T01:57:00.575787+00:00",
+  "generatedAt": "2026-11-06T08:57:19.365299+00:00",
   "ddragonVersion": "16.22.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -17,15 +17,15 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1635383813",
+      "lastMatchId": "LA2_1635665323",
       "lastGame": {
         "win": false,
-        "championId": 18,
-        "championName": "Tristana",
-        "kills": 2,
-        "deaths": 6,
-        "assists": 4,
-        "gameEndTimestamp": 1793841960738,
+        "championId": 360,
+        "championName": "Samira",
+        "kills": 5,
+        "deaths": 18,
+        "assists": 7,
+        "gameEndTimestamp": 1793948868602,
         "encountered": []
       },
       "inGame": null,
@@ -34,15 +34,15 @@
       "summonerLevel": 38,
       "tier": "GOLD",
       "rank": "IV",
-      "leaguePoints": 21,
+      "leaguePoints": 7,
       "wins": 19,
-      "losses": 39
+      "losses": 40
     },
     {
       "gameName": "PET OWNER XD",
       "tagLine": "ˇˉˇ",
       "opggUrl": "https://op.gg/es/lol/summoners/las/PET%20OWNER%20XD-%CB%87%CB%89%CB%87",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -53,15 +53,15 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1635520028",
+      "lastMatchId": "LA2_1635664931",
       "lastGame": {
         "win": false,
-        "championId": 950,
-        "championName": "Naafiri",
-        "kills": 5,
-        "deaths": 9,
-        "assists": 2,
-        "gameEndTimestamp": 1793909618105,
+        "championId": 876,
+        "championName": "Lillia",
+        "kills": 2,
+        "deaths": 7,
+        "assists": 5,
+        "gameEndTimestamp": 1793950949537,
         "encountered": []
       },
       "inGame": null,
@@ -70,15 +70,15 @@
       "summonerLevel": 37,
       "tier": "PLATINUM",
       "rank": "IV",
-      "leaguePoints": 10,
+      "leaguePoints": 0,
       "wins": 28,
-      "losses": 26
+      "losses": 27
     },
     {
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -114,7 +114,7 @@
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -150,7 +150,7 @@
       "gameName": "i bark for her",
       "tagLine": "24 04",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20bark%20for%20her-24%2004",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -186,7 +186,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -222,7 +222,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-11-06T01:57:00.575787+00:00",
+      "updatedAt": "2026-11-06T08:57:19.365299+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
