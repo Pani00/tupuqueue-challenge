@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-23T02:56:40.591053+00:00",
+  "generatedAt": "2026-11-23T11:49:59.085951+00:00",
   "ddragonVersion": "16.23.1",
   "players": [
     {
       "gameName": "DOMDRAVENXXX",
       "tagLine": "BLEED",
       "opggUrl": "https://op.gg/es/lol/summoners/las/DOMDRAVENXXX-BLEED",
-      "updatedAt": "2026-11-23T02:56:40.591053+00:00",
+      "updatedAt": "2026-11-23T11:49:59.085951+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -79,7 +79,7 @@
       "gameName": "pet girl",
       "tagLine": "εïз",
       "opggUrl": "https://op.gg/es/lol/summoners/las/pet%20girl-%CE%B5%C3%AF%D0%B7",
-      "updatedAt": "2026-11-23T02:56:40.591053+00:00",
+      "updatedAt": "2026-11-23T11:49:59.085951+00:00",
       "stale": false,
       "baseline": {
         "tier": "GOLD",
@@ -90,15 +90,15 @@
         "recordedAt": "2026-08-21T05:52:14.487275+00:00"
       },
       "pentakills": 0,
-      "lastMatchId": "LA2_1636391602",
+      "lastMatchId": "LA2_1639460577",
       "lastGame": {
         "win": false,
         "championId": 147,
         "championName": "Seraphine",
-        "kills": 2,
-        "deaths": 12,
-        "assists": 27,
-        "gameEndTimestamp": 1794250519715,
+        "kills": 1,
+        "deaths": 8,
+        "assists": 17,
+        "gameEndTimestamp": 1795427228792,
         "encountered": []
       },
       "inGame": null,
@@ -106,16 +106,16 @@
       "profileIconId": 4108,
       "summonerLevel": 42,
       "tier": "EMERALD",
-      "rank": "II",
-      "leaguePoints": 15,
+      "rank": "III",
+      "leaguePoints": 96,
       "wins": 51,
-      "losses": 55
+      "losses": 56
     },
     {
       "gameName": "i meow for him",
       "tagLine": "03 08",
       "opggUrl": "https://op.gg/es/lol/summoners/las/i%20meow%20for%20him-03%2008",
-      "updatedAt": "2026-11-23T02:56:40.591053+00:00",
+      "updatedAt": "2026-11-23T11:49:59.085951+00:00",
       "stale": false,
       "baseline": {
         "tier": null,
@@ -188,7 +188,7 @@
       "gameName": "baby kilo",
       "tagLine": "pxxr",
       "opggUrl": "https://op.gg/es/lol/summoners/las/baby%20kilo-pxxr",
-      "updatedAt": "2026-11-23T02:56:40.591053+00:00",
+      "updatedAt": "2026-11-23T11:49:59.085951+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
@@ -224,7 +224,7 @@
       "gameName": "hyoudoe",
       "tagLine": "proxy",
       "opggUrl": "https://op.gg/es/lol/summoners/las/hyoudoe-proxy",
-      "updatedAt": "2026-11-23T02:56:40.591053+00:00",
+      "updatedAt": "2026-11-23T11:49:59.085951+00:00",
       "stale": false,
       "baseline": {
         "tier": "SILVER",
